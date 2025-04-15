@@ -11,7 +11,7 @@ import {getPublicBaseUrl} from "../../../common/ClientUrlUtils";
 import AdminRadio from "../../../components/AdminRadio";
 import {showToast} from "../../../common/ToastUtils";
 import {unescapeHtml} from "../../../../common-src/StringUtils";
-import MediaManager from "./components/MediaManager";
+// import MediaManager from "./components/MediaManager";
 import {
   NAV_ITEMS,
   NAV_ITEMS_DICT,
@@ -181,19 +181,19 @@ export default class EditItemApp extends React.Component {
   render() {
     const {submitStatus, itemId, item, action, feed, onboardingResult, changed} = this.state;
     const submitting = submitStatus === SUBMIT_STATUS__START;
-    const {mediaFile} = item;
+    // const {mediaFile} = item;
     const status = item.status || STATUSES.PUBLISHED;
 
     const webGlobalSettings = feed.settings.webGlobalSettings || {};
     const publicBucketUrl = webGlobalSettings.publicBucketUrl || '';
 
-    let buttonText = 'Create';
-    let submittingButtonText = 'Creating...';
+    let buttonText = 'Tambah';
+    let submittingButtonText = 'Menambahkan...';
     let currentPage = NAV_ITEMS.NEW_ITEM;
     let upperLevel;
     if (action === 'edit') {
-      buttonText = 'Update';
-      submittingButtonText = 'Updating...';
+      buttonText = 'Ubah';
+      submittingButtonText = 'Mengubah...';
       currentPage = NAV_ITEMS.ALL_ITEMS;
       upperLevel = {
         name: NAV_ITEMS_DICT[NAV_ITEMS.ALL_ITEMS].name,
@@ -208,7 +208,7 @@ export default class EditItemApp extends React.Component {
     >
       <form className="grid grid-cols-12 gap-4">
         <div className="col-span-9 grid grid-cols-1 gap-4">
-          <div className="lh-page-card">
+          {/* <div className="lh-page-card">
             <MediaManager
               labelComponent={<ExplainText bundle={CONTROLS_TEXTS_DICT[ITEM_CONTROLS.MEDIA_FILE]}/>}
               feed={feed}
@@ -222,7 +222,7 @@ export default class EditItemApp extends React.Component {
                 });
               }}
             />
-          </div>
+          </div> */}
           <div className="lh-page-card">
             <div className="flex">
               <div>
@@ -300,7 +300,7 @@ export default class EditItemApp extends React.Component {
               />
             </div>
           </div>
-          <div className="lh-page-card">
+          {/* <div className="lh-page-card">
             <details>
               <summary className="m-page-summary">Podcast-specific fields</summary>
               <div className="grid grid-cols-1 gap-8">
@@ -384,7 +384,7 @@ export default class EditItemApp extends React.Component {
                 </div>
               </div>
             </details>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-3">
           <div className="sticky top-8">

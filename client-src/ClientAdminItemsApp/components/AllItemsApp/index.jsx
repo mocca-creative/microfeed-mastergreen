@@ -41,11 +41,7 @@ const columns = [
   columnHelper.accessor('pubDateMs', {
     header: 'Published date',
     cell: info => <div className="text-center">{msToDatetimeLocalString(info.getValue())}</div>,
-  }),
-  columnHelper.accessor('mediaFile', {
-    header: 'Media file',
-    cell: info => info.getValue(),
-  }),
+  })
 ];
 
 function ItemListTable({data, feed}) {
@@ -69,12 +65,12 @@ function ItemListTable({data, feed}) {
         groupName="sort-order"
         buttons={[
           {
-            name: 'Newest first',
+            name: 'Terbaru dulu',
             value: ITEMS_SORT_ORDERS.NEWEST_FIRST,
             checked: newestFirst,
           },
           {
-            name: 'Oldest first',
+            name: 'Terlama dulu',
             value: ITEMS_SORT_ORDERS.OLDEST_FIRST,
             checked: !newestFirst,
           },
@@ -161,13 +157,13 @@ export default class AllItemsApp extends React.Component {
             linkClass="text-xs text-helper-color
             hover:text-brand-light"
             url={PUBLIC_URLS.webItem(item.id, item.title)}
-            text="Public page"
+            text="Halaman publik"
           />
           <div className="ml-4 flex-none">
             <a
               href={ADMIN_URLS.editItem(item.id)}
             ><span className="block text-xs text-helper-color hover:text-brand-light">
-              Edit this item <span className="lh-icon-arrow-right"/></span></a>
+              Ubah postingan ini <span className="lh-icon-arrow-right"/></span></a>
           </div>
         </div>
       </div>,

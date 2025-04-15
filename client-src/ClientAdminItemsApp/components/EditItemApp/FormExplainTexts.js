@@ -19,7 +19,7 @@ export const ITEM_CONTROLS = {
 
 export const CONTROLS_TEXTS_DICT = {
   [ITEM_CONTROLS.TITLE]: {
-    linkName: 'Title',
+    linkName: 'Judul',
     modalTitle: 'Item / Title',
     text: "An item's title. It could be a podcast episode's title, a blog post's title, a custom title of a curated article...<br>" +
       "If it's a podcast episode, please don’t specify the episode number or season number in this tag. " +
@@ -29,7 +29,7 @@ export const CONTROLS_TEXTS_DICT = {
     json: '{ "items": [{"title": "Title Here"}] }',
   },
   [ITEM_CONTROLS.IMAGE]: {
-    linkName: 'Item image',
+    linkName: 'Gambar Thumbnail',
     modalTitle: 'Item / Image',
     text: "A square-sized image specific to this item. " +
       "If it's a podcast episode, the image size should be a minimum size of 1400 x 1400 pixels and a maximum size of 3000 x 3000 pixels, " +
@@ -50,7 +50,7 @@ export const CONTROLS_TEXTS_DICT = {
   },
 
   [ITEM_CONTROLS.PUB_DATE]: {
-    linkName: 'Published date',
+    linkName: 'Tanggal Rilis',
     modalTitle: 'Item / Published date',
     text: "The date and time when an item was released.",
     rss: '<channel><item><pubDate>Wed, 30 Nov 2022 04:31:48 GMT</pubDate></item></channel>',
@@ -64,7 +64,7 @@ export const CONTROLS_TEXTS_DICT = {
     json: '{ "items": [{"url": "https://example.com/page1.html"}] }',
   },
   [ITEM_CONTROLS.DESCRIPTION]: {
-    linkName: 'Description',
+    linkName: 'Artikel',
     modalTitle: 'Item / Description',
     text: "An item's description. <br>" +
       "If this is a podcast episode, you'd better limit the description length to be within 4000 characters, " +

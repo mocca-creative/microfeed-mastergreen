@@ -5,6 +5,7 @@ import WhatsNewApp from "./component/WhatsNewApp";
 import DistributionApp from "./component/DistributionApp";
 import SetupChecklistApp from "./component/SetupChecklistApp";
 import {unescapeHtml} from "../../../../common-src/StringUtils";
+import AboutAdminApp from './component/AboutAdminApp';
 // import {unescapeHtml} from "../../../../common-src/StringUtils";
 
 export default class AdminHomeApp extends React.Component {
@@ -29,6 +30,9 @@ export default class AdminHomeApp extends React.Component {
     >
       <form className="grid grid-cols-12 gap-4" onSubmit={(e) => e.preventDefault()}>
         <div className="col-span-8 grid grid-cols-1 gap-4">
+          <div>
+            <AboutAdminApp />
+          </div>
           <div>
             <SetupChecklistApp feed={feed} onboardingResult={onboardingResult} />
           </div>

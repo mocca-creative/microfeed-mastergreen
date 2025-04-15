@@ -7,7 +7,6 @@ import {
   Cog6ToothIcon,
   PlusIcon,
   ListBulletIcon,
-  PencilSquareIcon,
   ArrowLeftOnRectangleIcon,
 } from '@heroicons/react/24/outline';
 import {ADMIN_URLS} from "../../../common-src/StringUtils";
@@ -50,8 +49,8 @@ export default class AdminNavApp extends React.Component {
     return (<div className="flex flex-col min-h-screen min-w-screen">
       <div className="grid grid-cols-12 gap-4 bg-white flex items-center border-b drop-shadow-sm">
         <div className="col-span-2 py-4 px-4 xl:px-8">
-          <a href={OUR_BRAND.whatsnewWebsite} target="_blank" className="hover:opacity-50">
-            <img src="/assets/brands/microfeed/horizontal-logo.png" className="w-full"/>
+          <a href={OUR_BRAND.moccaUrl} target="_blank" className="hover:opacity-50">
+            <img src="/assets/brands/mocca/mocca-trans-black.png" className="w-full"/>
           </a>
         </div>
         <div className="col-span-10 flex items-center">
@@ -80,14 +79,6 @@ export default class AdminNavApp extends React.Component {
               navId={NAV_ITEMS.ADMIN_HOME}
               currentId={currentPage}
               Icon={HomeIcon}
-            />
-            <NavItem
-              url={ADMIN_URLS.editPrimaryChannel()}
-              title={NAV_ITEMS_DICT[NAV_ITEMS.EDIT_CHANNEL].name}
-              navId={NAV_ITEMS.EDIT_CHANNEL}
-              currentId={currentPage}
-              Icon={PencilSquareIcon}
-              disabled={!onboardingResult.requiredOk}
             />
             <NavItem
               url={ADMIN_URLS.newItem()}

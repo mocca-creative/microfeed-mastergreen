@@ -127,6 +127,8 @@ export const PREDEFINED_SUBSCRIBE_METHODS = {
 };
 
 export const OUR_BRAND = {
+  moccaUrl: 'https://mocca.co.id/',
+  mastergreenUrl: 'https://mastergreen.id/',
   domain: 'microfeed.org',
   brandName: 'microfeed',
   whatsnewEndpoint: 'https://www.microfeed.org/json/',
@@ -188,10 +190,10 @@ export const NAV_ITEMS_DICT = {
     name: 'Edit channel',
   },
   [NAV_ITEMS.NEW_ITEM]: {
-    name: 'Add new item',
+    name: 'Tambah Baru',
   },
   [NAV_ITEMS.ALL_ITEMS]: {
-    name: 'See all items',
+    name: 'Lihat Semua',
   },
   [NAV_ITEMS.SETTINGS]: {
     name: 'Settings',

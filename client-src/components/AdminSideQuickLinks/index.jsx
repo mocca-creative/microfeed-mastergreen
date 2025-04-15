@@ -9,7 +9,7 @@ export function SideQuickLink({url, text}) {
 }
 
 export function AdminSideQuickLinks({AdditionalLinksDiv}) {
-  return (<div className="lh-page-card mt-4 px-4">
+  return (<div className="hidden lh-page-card mt-4 px-4">
     <div className="lh-page-subtitle">Public access</div>
     <div className="grid grid-cols-1 gap-2">
       {AdditionalLinksDiv}
