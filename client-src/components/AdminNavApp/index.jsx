@@ -48,12 +48,18 @@ export default class AdminNavApp extends React.Component {
     const onboardingResult = this.props.onboardingResult || {requiredOk: true};
     return (<div className="flex flex-col min-h-screen min-w-screen">
       <div className="grid grid-cols-12 gap-4 bg-white flex items-center border-b drop-shadow-sm">
-        <div className="col-span-2 py-4 px-4 xl:px-8">
+        <div className="col-span-1 py-4 px-4 xl:px-8">
           <a href={OUR_BRAND.moccaUrl} target="_blank" className="hover:opacity-50">
-            <img src="/assets/brands/mocca/mocca-trans-black.png" className="w-full"/>
+            <img src="/assets/brands/mocca/mocca-trans.png" className="w-full"/>
           </a>
         </div>
-        <div className="col-span-10 flex items-center">
+        <div className="col-span-4"></div>
+        <div className="col-span-2 py-4 px-4 xl:px-8">
+          <a href={OUR_BRAND.mastergreenUrl} target="_blank" className="hover:opacity-50">
+            <img src="/assets/brands/mocca/mg-1.png" className="w-full"/>
+          </a>
+        </div>
+        <div className="col-span-5 flex items-center">
           {upperLevel && <div className="py-6 pl-4 xl:pl-16">
             <a href={upperLevel.url}><span className="lh-icon-arrow-left"/> {upperLevel.name}</a>
             <span className="mx-2">/</span>

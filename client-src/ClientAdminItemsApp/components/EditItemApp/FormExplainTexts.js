@@ -57,7 +57,7 @@ export const CONTROLS_TEXTS_DICT = {
     json: '{ "items": [{"date_published": "2022-11-30T04:31:31.867Z", "_microfeed": {"date_published_ms": 1669782691867, "date_published_short": "Tue Nov 29 2022"}}] }',
   },
   [ITEM_CONTROLS.LINK]: {
-    linkName: 'Link',
+    linkName: 'Link (Otomatis Terisi)',
     modalTitle: 'Item / Link',
     text: "An item's web link. By default, it's a web page on your microfeed. But you can set it to fit your use case.",
     rss: '<channel><item><link>https://example.com/page1.html</link></item></channel>',
