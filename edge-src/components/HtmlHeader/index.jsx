@@ -20,10 +20,14 @@ export default class HtmlHeader extends React.Component {
       favicon,
       canonicalUrl,
     } = this.props;
+    //TODO: iki piye cuk carane entuk jsonData kuwi soko ngendi jancukk
+    const URL_TITLE = title.split(" ")
+    console.log(URL_TITLE)
+
     return (
       <head>
         <meta charSet="utf-8"/>
-        <title>{title}</title>
+        <title>{URL_TITLE[0] + " | " + "cms.mastergreen.com"}</title>
         {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         {description && <meta name="description" content={description}/>}
